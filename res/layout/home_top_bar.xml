@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="44dp" android:id="@+id/topBar"
+    android:background="@drawable/menubar"
+     >
+    
+    <Button
+        android:id="@+id/btnBulletinTopMenu" 
+    	android:layout_width="30dp"	
+    	android:layout_height="30dp"
+    	android:layout_centerVertical="true"
+    	android:layout_marginLeft="5dp"
+    	android:background="@drawable/top_menu_button"   
+    />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                  android:orientation="horizontal"
+                  android:gravity="center"
+                   android:layout_toRightOf="@+id/btnBulletinTopMenu">
+
+    <ImageView android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/ceptvlogo128" />
+    <TextView
+        android:id="@+id/tvSelectedSportType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cep TV"
+        android:maxLines="1"
+        android:ellipsize="marquee"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/Orange"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/btnBulletinTopMenu"
+     />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

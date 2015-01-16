@@ -1,0 +1,14 @@
+<resources>
+
+
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">true</item>
+     </style>
+
+    <style name="Theme.FullScreen" parent="@android:style/Theme.Holo">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

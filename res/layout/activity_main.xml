@@ -1,0 +1,37 @@
+<com.erhanasikoglu.ceptv.activity.MySlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                      android:id="@+id/sliding_pane_layout"
+                                                      android:layout_width="match_parent"
+                                                      android:layout_height="match_parent"
+        >
+
+
+    <ListView
+            android:id="@+id/lvMainMenu"
+            android:layout_width="256dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/basicBckgrnd"
+            android:choiceMode="singleChoice"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:divider="@null"
+            android:dividerHeight="0dp" android:visibility="gone"
+            />
+
+
+    <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="vertical"
+            android:background="@color/basicBckgrnd">
+        <include
+                layout="@layout/home_top_bar"
+                />
+        <FrameLayout
+                android:id="@+id/main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/basicBckgrnd"/>
+    </LinearLayout>
+
+</com.erhanasikoglu.ceptv.activity.MySlidingPaneLayout>

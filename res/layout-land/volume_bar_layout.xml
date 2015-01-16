@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/volume_bar_layout"
+              android:background="@drawable/pop_up_round_shape"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" android:clickable="true"
+              android:focusableInTouchMode="true"
+              android:layout_centerInParent="true" android:visibility="gone"
+              android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/menutitlebar"
+            >
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:id="@+id/volume_text"
+                  android:layout_gravity="center"
+                  android:layout_centerVertical="true" android:layout_centerHorizontal="true"/>
+
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/close32"
+                android:layout_alignParentRight="true" android:id="@+id/volume_bar_close_btn"/>
+
+    </RelativeLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="center_vertical"
+                  android:layout_margin="10dp">
+
+        <SeekBar
+                android:id="@+id/volume_bar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/style_progress_bar"
+                android:indeterminate="false"
+                android:scaleType="fitXY"
+                android:thumb="@drawable/thumb3"
+                />
+    </LinearLayout>
+</LinearLayout>

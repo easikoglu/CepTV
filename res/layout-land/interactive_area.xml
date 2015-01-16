@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/tv_control_btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left" android:layout_margin="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true">
+
+
+        <Button android:background="@drawable/tv_control_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_control_btn"
+                 />
+
+    </RelativeLayout>
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:id="@+id/button_area"
+                  android:layout_alignParentRight="true"
+                  android:layout_alignParentBottom="true" android:gravity="bottom"
+                  android:layout_margin="10dp">
+
+        <Button android:background="@drawable/programs_control_btn"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/programs_control_btn" android:layout_centerVertical="true"
+                android:layout_alignParentRight="true" android:visibility="gone"  />
+
+        <Button android:background="@drawable/volume_control_btn"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/volume_control_btn" android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"/>
+
+        <Button android:background="@drawable/media_control_btn"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" android:id="@+id/media_control_btn"/>
+
+    </LinearLayout>
+
+
+    <!--  pop up windows -->
+
+    <include layout="@layout/programs_list_layout"></include>
+
+
+    <include layout="@layout/channel_list_layout"></include>
+
+    <include layout="@layout/volume_bar_layout"></include>
+
+
+</RelativeLayout>

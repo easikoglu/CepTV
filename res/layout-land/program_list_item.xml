@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="200dp"
+              android:layout_height="55dp"
+              android:background="@drawable/menulabel"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical"
+              >
+
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="2dp">
+        <TextView
+                android:id="@+id/programName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="(Belirtilmedi)"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit ="marquee_forever"
+                android:scrollHorizontally="true"
+                android:textColor="@color/Chocolate"
+                android:textSize="15dp"  />
+
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_margin="2dp">
+        <TextView
+                android:id="@+id/timeInterval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(Belirtilmedi)"
+                android:textSize="16dp"  />
+
+    </LinearLayout>
+
+</LinearLayout>

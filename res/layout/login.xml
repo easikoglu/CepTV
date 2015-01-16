@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" android:background="@color/basicBckgrnd"
+        >
+
+    <LinearLayout android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginBottom="10dp">
+
+        <ImageView android:layout_width="match_parent"
+                   android:src="@drawable/ceptvlogo256"
+                   android:layout_height="wrap_content" android:layout_marginBottom="80dp"/>
+
+
+        <!--<Button
+                android:id="@+id/facebookLoginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:text="@string/login"
+                android:layout_marginBottom="30dp"
+                android:textColor="#fff" android:textSize="16dp" android:textAlignment="gravity"
+                android:gravity="right|center_vertical" android:paddingRight="3dp"
+                android:background="@drawable/button_login"
+                android:layout_alignParentTop="true" android:layout_alignLeft="@+id/continueBtn"
+                android:layout_alignStart="@+id/continueBtn"
+                android:layout_alignRight="@+id/continueBtn"
+                android:layout_alignEnd="@+id/continueBtn"/>-->
+        <com.facebook.widget.LoginButton
+                android:id="@+id/facebookLoginBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+
+                />
+
+        <Button
+                android:id="@+id/continueBtn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:text="@string/continue_button"
+                android:textColor="#fff" android:textSize="16dp"
+                android:paddingRight="3dp"
+                android:background="@drawable/button_continue"
+                android:layout_below="@+id/facebookLoginBtn"
+                android:layout_centerHorizontal="true"
+            />
+    </LinearLayout>
+</RelativeLayout>
